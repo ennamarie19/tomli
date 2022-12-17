@@ -4,6 +4,6 @@ testsuite:
     - file://fuzzer/testsuite
 
 cmds:
-  - cmd: /tomli/fuzzer/fuzz.py
+  - cmd: python3 /tomli/fuzzer/fuzz.py
     libfuzzer: true
     timeout: 12
