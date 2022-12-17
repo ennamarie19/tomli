@@ -1,0 +1,9 @@
+project: tomli
+target: tomli-fuzz
+testsuite:
+    - file://fuzzer/testsuite
+
+cmds:
+  - cmd: /tomli/fuzzer/fuzz.py
+    libfuzzer: true
+    timeout: 12
